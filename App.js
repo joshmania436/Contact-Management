@@ -5,6 +5,7 @@ import AddScreen from './screens/AddScreen';
 import HomeScreen from './screens/HomeScreen';
 import LoginScreen from './screens/LoginScreen';
 import SignUpScreen from './screens/SignUpScreen';
+import CallingScreen from './screens/CallingScreen'
 
 export default class App extends React.Component{
   render(){
@@ -18,7 +19,9 @@ const SwitchNavigator = createSwitchNavigator({
   Login:{screen:LoginScreen},
   SignUp:{screen:SignUpScreen},
   Add:{screen:AddScreen},
-  Home:{screen:HomeScreen}
+  Home:{screen:HomeScreen},
+  Call:{screen:CallingScreen}
+ 
 }) 
 
 const AppContainer =createAppContainer(SwitchNavigator)
